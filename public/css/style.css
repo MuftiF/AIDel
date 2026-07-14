@@ -1,0 +1,55 @@
+:root {
+    --clay-outer: 20px 20px 40px rgba(0, 0, 0, 0.12);
+    --clay-inner-light: inset 8px 8px 16px rgba(255, 255, 255, 0.8);
+    --clay-inner-dark: inset -8px -8px 16px rgba(0, 0, 0, 0.05);
+    --clay-inset: inset 4px 4px 8px rgba(0, 0, 0, 0.05), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+}
+
+.clay-card {
+    box-shadow: var(--clay-outer), var(--clay-inner-light), var(--clay-inner-dark);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clay-card:active {
+    box-shadow: var(--clay-inner-light), var(--clay-inner-dark);
+    transform: scale(0.98);
+}
+
+.clay-button {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), var(--clay-inner-light), var(--clay-inner-dark);
+    transition: all 0.2s ease;
+}
+
+.clay-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.15), var(--clay-inner-light), var(--clay-inner-dark);
+}
+
+.clay-button:active {
+    transform: scale(0.95);
+    box-shadow: var(--clay-inner-light), var(--clay-inner-dark);
+}
+
+.clay-field {
+    box-shadow: var(--clay-inset);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #f7faf9;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Quicksand', sans-serif;
+}
