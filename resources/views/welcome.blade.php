@@ -7,7 +7,7 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&amp;family=Nunito+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <link href="{{ asset('css/style.css') }}" rel="stylesheet"/>
     <script src="{{ asset('js/tailwind-config.js') }}"></script>
 </head>
@@ -16,54 +16,51 @@
 <header class="bg-surface docked full-width top-0 z-50 shadow-[20px_20px_40px_rgba(0,0,0,0.12)] flex justify-between items-center w-full px-container-padding py-sm sticky top-0">
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">landscape</span>
-<span class="text-headline-md font-headline-md font-bold text-primary">TobaGuide</span>
+<span class="text-headline-md font-headline-md font-bold text-primary mr-4">TobaGuide</span>
+<nav class="hidden lg:flex items-center gap-6">
+    <a class="flex items-center gap-2 text-primary font-bold transition-colors hover:text-primary-container" href="#">
+        <span class="material-symbols-outlined text-xl">map</span> Map
+    </a>
+    <a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="#">
+        <span class="material-symbols-outlined text-xl">sunny_snowing</span> Weather
+    </a>
+    <a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="#">
+        <span class="material-symbols-outlined text-xl">groups</span> Alerts
+    </a>
+    <!-- Dropdown Fitur -->
+    <div class="relative group">
+        <button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors focus:outline-none">
+            <span class="material-symbols-outlined text-xl">widgets</span> Features
+            <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+        </button>
+        <div class="absolute top-full left-0 mt-4 w-48 bg-surface-container-lowest clay-card rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 translate-y-2 group-hover:translate-y-0">
+            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-primary-fixed hover:text-primary font-semibold transition-colors">Tour Guide</a>
+            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-primary-fixed hover:text-primary font-semibold transition-colors">Sewa Kendaraan</a>
+            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-primary-fixed hover:text-primary font-semibold transition-colors">Event Lokal</a>
+        </div>
+    </div>
+</nav>
 </div>
 <div class="flex items-center gap-base">
+<button class="hidden xl:flex clay-button bg-primary text-on-primary px-4 py-2 rounded-xl font-bold items-center gap-2 mr-2">
+    <span class="material-symbols-outlined text-sm">auto_awesome</span> New Trip
+</button>
 <div class="hidden md:flex bg-surface-container-low clay-field rounded-full px-4 py-2 items-center gap-2">
 <span class="material-symbols-outlined text-outline">search</span>
 <input class="bg-transparent border-none focus:ring-0 text-label-md" placeholder="Cari destinasi..." type="text"/>
 </div>
-<button class="material-symbols-outlined text-on-surface-variant hover:scale-105 transition-transform p-2">notifications</button>
-<button class="material-symbols-outlined text-on-surface-variant hover:scale-105 transition-transform p-2">cloud</button>
+<button class="material-symbols-rounded text-on-surface-variant hover:scale-105 transition-transform p-2">mail</button>
+<button class="material-symbols-rounded text-on-surface-variant hover:scale-105 transition-transform p-2 text-[26px]" style="font-variation-settings: 'wght' 300;">
+  info
+</button>
 <div class="w-10 h-10 rounded-full clay-card bg-primary-container p-0.5 ml-2 overflow-hidden">
 <img class="w-full h-full object-cover rounded-full" data-alt="A friendly and professional local tour guide profile picture with a warm smile, wearing outdoor adventure gear with Lake Toba's lush green hills in the background. The lighting is soft morning sun, emphasizing a welcoming and adventurous vibe. Claymorphic soft focus around the edges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqlI6RzcIjJ5BJJroTOGyiGkEMN6asfYSybybC4g-zd6G8LcEYKE0hV5a_ovI9YlyYHuucmaCvWfijE9cH2r2sXqIb0aMMHMx0fZkLQKtTo5YyoPzj9VoKc00I2vFVXnJuLpkkYsOGIzAMhXciWS5jYQGKvC4R0_cVM4SxmQNXjkyZWATEESWlXOOCopX5JcxJKvzWJCJqcA9fLTEASn3yqRun89GhEEOYx7ozoLeg7fiuRtc2t5Q"/>
 </div>
 </div>
 </header>
 <div class="flex min-h-screen">
-<!-- Side Navigation (Desktop) -->
-<aside class="hidden md:flex fixed left-0 top-0 h-full z-40 w-80 bg-surface-bright flex-col py-lg px-6 shadow-[20px_0_50px_rgba(0,0,0,0.1)]">
-<div class="mt-20 flex flex-col gap-sm">
-<div class="px-4 mb-6">
-<h2 class="text-headline-md font-bold text-primary">Lake Toba Explorer</h2>
-<p class="text-body-md text-on-surface-variant">Local Guide Mode Active</p>
-</div>
-<nav class="flex flex-col gap-2">
-<a class="flex items-center gap-4 px-4 py-3 text-primary font-bold bg-secondary-container/30 rounded-lg transition-all hover:translate-x-2" href="#">
-<span class="material-symbols-outlined">map</span> Map View
-                    </a>
-<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:translate-x-2 transition-transform" href="#">
-<span class="material-symbols-outlined">sunny_snowing</span> Weather
-                    </a>
-<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:translate-x-2 transition-transform" href="#">
-<span class="material-symbols-outlined">groups</span> Crowd Alerts
-                    </a>
-<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:translate-x-2 transition-transform" href="#">
-<span class="material-symbols-outlined">tune</span> Preferences
-                    </a>
-<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:translate-x-2 transition-transform" href="#">
-<span class="material-symbols-outlined">settings</span> Settings
-                    </a>
-</nav>
-<div class="mt-auto px-4">
-<button class="w-full clay-button bg-primary text-on-primary py-4 rounded-xl font-bold flex items-center justify-center gap-2">
-<span class="material-symbols-outlined">auto_awesome</span> Generate New Trip
-                    </button>
-</div>
-</div>
-</aside>
 <!-- Main Canvas -->
-<main class="flex-1 md:ml-80 pb-24 md:pb-8 p-md md:p-xl space-y-lg">
+<main class="flex-1 w-full pb-24 md:pb-8 p-md md:p-xl space-y-lg">
 <!-- Welcome Header -->
 <section class="max-w-6xl mx-auto">
 <h1 class="text-display-lg font-display-lg text-primary mb-2">Halo, Petualang!</h1>
