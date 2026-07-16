@@ -13,7 +13,7 @@
 </head>
 <body class="bg-surface text-on-surface">
 <!-- Top App Bar -->
-<header class="bg-surface docked full-width top-0 z-50 shadow-[20px_20px_40px_rgba(0,0,0,0.12)] flex justify-between items-center w-full px-container-padding py-sm sticky top-0">
+<header class="bg-surface docked full-width top-0 z-50 flex justify-between items-center w-full px-container-padding py-sm sticky top-0 border-b border-surface-dim">
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">landscape</span>
 <span class="text-headline-md font-headline-md font-bold text-primary mr-4">TobaGuide</span>
@@ -27,19 +27,20 @@
     <a class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors" href="#">
         <span class="material-symbols-outlined text-xl">groups</span> Alerts
     </a>
-    <!-- Dropdown Fitur -->
     <div class="relative group">
         <button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors focus:outline-none">
             <span class="material-symbols-outlined text-xl">widgets</span> Features
             <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">expand_more</span>
         </button>
-        <div class="absolute top-full left-0 mt-4 w-48 bg-surface-container-lowest clay-card rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 translate-y-2 group-hover:translate-y-0">
-            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-primary-fixed hover:text-primary font-semibold transition-colors">Tour Guide</a>
-            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-primary-fixed hover:text-primary font-semibold transition-colors">Sewa Kendaraan</a>
-            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-primary-fixed hover:text-primary font-semibold transition-colors">Event Lokal</a>
+
+        <div class="absolute top-full left-0 mt-6 w-48 bg-white border border-surface-dim rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 translate-y-2 group-hover:translate-y-0">
+            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-primary font-semibold transition-colors">Saon</a>
+            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-primary font-semibold transition-colors border-t border-surface-dim">Togu</a>
+            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-primary font-semibold transition-colors border-t border-surface-dim">Pardalanan</a>
         </div>
     </div>
 </nav>
+
 </div>
 <div class="flex items-center gap-base">
 <button class="hidden xl:flex clay-button bg-primary text-on-primary px-4 py-2 rounded-xl font-bold items-center gap-2 mr-2">
@@ -220,12 +221,12 @@
 </main>
 </div>
 <!-- Bottom Navigation Bar (Mobile) -->
-<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-surface-container-low rounded-t-xl shadow-[0px_-10px_30px_rgba(0,0,0,0.08)]">
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-surface-container-low rounded-t-xl border-t border-surface-dim">
 <button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-2 hover:bg-surface-variant/50 rounded-full">
 <span class="material-symbols-outlined">explore</span>
 <span class="text-label-md font-label-md">Explore</span>
 </button>
-<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-6 py-2 shadow-[inset_4px_4px_8px_rgba(255,255,255,0.4),inset_-4px_-4px_8px_rgba(0,0,0,0.1)] active:scale-90 transition-all">
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-6 py-2 active:scale-90 transition-all">
 <span class="material-symbols-outlined">event_note</span>
 <span class="text-label-md font-label-md">Itinerary</span>
 </button>
