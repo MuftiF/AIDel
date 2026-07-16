@@ -80,27 +80,10 @@
 
 <main class="pb-24 md:pb-16 p-md md:p-xl space-y-lg">
 
-<!-- Breadcrumb + Switcher -->
-<section class="max-w-6xl mx-auto space-y-4">
-<a href="{{ route('dashboard') }}" class="inline-flex items-center gap-1 text-body-md text-on-surface-variant hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-lg">arrow_back</span> Kembali ke Dashboard
-</a>
-<div class="flex gap-2 flex-wrap">
-<a href="{{ route('fitur.saon') }}" class="clay-button bg-white text-on-surface-variant px-4 py-2 rounded-full text-label-md font-bold flex items-center gap-2 hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-sm">translate</span> Saon
-</a>
-<span class="clay-button bg-tertiary text-on-tertiary px-4 py-2 rounded-full text-label-md font-bold flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">smart_toy</span> Togu
-</span>
-<a href="{{ route('fitur.pardalanan') }}" class="clay-button bg-white text-on-surface-variant px-4 py-2 rounded-full text-label-md font-bold flex items-center gap-2 hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-sm">route</span> Pardalanan
-</a>
-</div>
-</section>
 
 <!-- Feature: Togu -->
 <section class="max-w-6xl mx-auto">
-<div class="clay-card bg-surface-container-lowest rounded-[32px] p-md md:p-xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+<div class="p-md md:p-xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 <div class="clay-card bg-tertiary-fixed rounded-3xl p-6 flex flex-col items-center justify-center text-center space-y-4 min-h-[280px] relative overflow-hidden">
 <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 50% 30%, currentColor 1px, transparent 1px); background-size: 16px 16px; color: var(--color-tertiary);"></div>
 <div class="relative z-10 w-24 h-24 rounded-full bg-white flex items-center justify-center clay-card">

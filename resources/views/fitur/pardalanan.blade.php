@@ -80,27 +80,10 @@
 
 <main class="pb-24 md:pb-16 p-md md:p-xl space-y-lg">
 
-<!-- Breadcrumb + Switcher -->
-<section class="max-w-6xl mx-auto space-y-4">
-<a href="{{ route('dashboard') }}" class="inline-flex items-center gap-1 text-body-md text-on-surface-variant hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-lg">arrow_back</span> Kembali ke Dashboard
-</a>
-<div class="flex gap-2 flex-wrap">
-<a href="{{ route('fitur.saon') }}" class="clay-button bg-white text-on-surface-variant px-4 py-2 rounded-full text-label-md font-bold flex items-center gap-2 hover:text-primary transition-colors">
-<span class="material-symbols-outlined text-sm">translate</span> Saon
-</a>
-<a href="{{ route('fitur.togu') }}" class="clay-button bg-white text-on-surface-variant px-4 py-2 rounded-full text-label-md font-bold flex items-center gap-2 hover:text-tertiary transition-colors">
-<span class="material-symbols-outlined text-sm">smart_toy</span> Togu
-</a>
-<span class="clay-button bg-primary text-on-primary px-4 py-2 rounded-full text-label-md font-bold flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">route</span> Pardalanan
-</span>
-</div>
-</section>
 
 <!-- Feature: Pardalanan -->
 <section class="max-w-6xl mx-auto">
-<div class="clay-card bg-surface-container-lowest rounded-[32px] p-md md:p-xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+<div class="Z p-md md:p-xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 <div class="space-y-4 order-2 lg:order-1">
 <div class="flex items-center gap-3">
 <div class="w-12 h-12 rounded-2xl bg-secondary-container flex items-center justify-center">
@@ -140,7 +123,7 @@ AI menyusun graf destinasi dan merekomendasikan urutan tempat yang paling optima
 <div class="space-y-3">
 <div class="flex items-center gap-3">
 <div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center text-label-md font-bold shrink-0">1</div>
-<div class="flex-1 clay-card bg-surface-container-low rounded-xl px-4 py-2.5">
+<div class="flex-1 ">
 <p class="text-body-md font-bold text-on-surface">Tomok</p>
 <p class="text-label-md text-on-surface-variant">Rp15rb transport · Cerah</p>
 </div>
@@ -148,7 +131,7 @@ AI menyusun graf destinasi dan merekomendasikan urutan tempat yang paling optima
 <div class="ml-4 h-4 border-l-2 border-dashed border-primary-container"></div>
 <div class="flex items-center gap-3">
 <div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center text-label-md font-bold shrink-0">2</div>
-<div class="flex-1 clay-card bg-surface-container-low rounded-xl px-4 py-2.5">
+<div class="flex-1 ">
 <p class="text-body-md font-bold text-on-surface">Ambarita</p>
 <p class="text-label-md text-on-surface-variant">Rp10rb transport · Berawan</p>
 </div>
@@ -156,7 +139,7 @@ AI menyusun graf destinasi dan merekomendasikan urutan tempat yang paling optima
 <div class="ml-4 h-4 border-l-2 border-dashed border-primary-container"></div>
 <div class="flex items-center gap-3">
 <div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center text-label-md font-bold shrink-0">3</div>
-<div class="flex-1 clay-card bg-surface-container-low rounded-xl px-4 py-2.5">
+<div class="flex-1 ">
 <p class="text-body-md font-bold text-on-surface">Simanindo</p>
 <p class="text-label-md text-on-surface-variant">Rp20rb transport · Cerah, sepi</p>
 </div>
