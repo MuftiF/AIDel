@@ -34,9 +34,9 @@
         </button>
 
         <div class="absolute top-full left-0 mt-6 w-48 bg-white border border-surface-dim rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 translate-y-2 group-hover:translate-y-0">
-            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-primary font-semibold transition-colors">Saon</a>
-            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-primary font-semibold transition-colors border-t border-surface-dim">Togu</a>
-            <a href="#" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-primary font-semibold transition-colors border-t border-surface-dim">Pardalanan</a>
+            <a href="{{ route('fitur.saon') }}" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-primary font-semibold transition-colors">Saon</a>
+            <a href="{{ route('fitur.togu') }}" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-primary font-semibold transition-colors border-t border-surface-dim">Togu</a>
+            <a href="{{ route('fitur.pardalanan') }}" class="block px-4 py-3 text-body-md text-on-surface-variant hover:bg-surface-container-low hover:text-primary font-semibold transition-colors border-t border-surface-dim">Pardalanan</a>
         </div>
     </div>
 </nav>
